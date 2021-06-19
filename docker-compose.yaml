@@ -1,0 +1,10 @@
+version: '0.0'
+services:
+  pybot:
+    build: Dockerfile-pybot
+    restart: always
+    ports:
+    - 8081:80
+    volumes:
+    - .:/app
+    container_name: pybot-container
