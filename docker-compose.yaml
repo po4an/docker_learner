@@ -10,3 +10,4 @@ services:
     volumes:
       - .:/app
     container_name: pybot-container
+    command: python pybot.py
